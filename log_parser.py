@@ -55,7 +55,7 @@ def parse_log(logs):
         with open(f"{logs[:-4]}.json", "w", encoding="utf-8") as file:
             result = json.dumps(result, indent=4)
             file.write(result)
-            print(f"\n===== LOG FILE: {logs} =====\n {result}")
+            print(f"\n ******** Лог файл: {logs} ***********\n {result}")
 
 
 if args.log is not None:
